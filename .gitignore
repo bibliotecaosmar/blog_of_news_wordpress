@@ -2,9 +2,3 @@
 node_modules/
 package-lock.json
 package.json
-
-#ignore gulp
-gulpfile.js
-
-#ignore sass
-scss/

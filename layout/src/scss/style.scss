@@ -1,0 +1,15 @@
+//Cria nosso tema
+$my-color-1: #D98E7E;
+$my-color-2: #D96262;
+
+$theme-colors:(
+  "my-color-1": $my-color-1,
+  "my-color-2": $my-color-2
+);
+
+// classes personalizadas
+$bg-my-color-1: $my-color-1;
+$btn-my-color-2: $my-color-2;
+
+// importa o Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
