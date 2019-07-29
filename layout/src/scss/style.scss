@@ -2,8 +2,8 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
 //Cria nosso tema
-$my-color-1: #D98E7E;
-$my-color-2: #D96262;
+$my-color-1: #ffffff;
+$my-color-2: #6633cc;
 
 $theme-colors:(
   "my-color-1": $my-color-1,
@@ -11,14 +11,14 @@ $theme-colors:(
 );
 
 // classes personalizadas
-$bg-my-color-1: $my-color-1;
-$btn-my-color-2: $my-color-2;
+$bg: $my-color-1;
+$navbar: $my-color-2;
 
 // Background Image
 div.background-img {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: auto;
   background: url(../assets/background-img.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -27,7 +27,17 @@ div.background-img {
   background-color: $bg;
 }
 
-// cover
-div.cover {
+// Cover
+div.cover-theme {
   height: 25%;
+}
+
+// Navbar Attributes
+div.nav-theme {
+  background-color: $navbar;
+}
+
+// Links of the Navbar
+div.nav-links-theme {
+  width: 27em;
 }
