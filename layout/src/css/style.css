@@ -7023,8 +7023,8 @@ a.text-dark:hover, a.text-dark:focus {
 div.background-img {
   position: absolute;
   width: 100%;
-  height: auto;
-  background: url(../assets/background-img.jpg) no-repeat center center fixed;
+  height: 100vh;
+  background: url(../assets/background-img.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -moz-background-size: cover;
@@ -7039,3 +7039,6 @@ div.nav-theme {
 
 div.nav-links-theme {
   width: 27em; }
+
+div.breakspace {
+  height: 6rem; }

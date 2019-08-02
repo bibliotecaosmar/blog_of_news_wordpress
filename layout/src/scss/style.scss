@@ -7,7 +7,7 @@ $my-color-2: #6633cc;
 
 $theme-colors:(
   "my-color-1": $my-color-1,
-  "my-color-2": $my-color-2
+  "my-color-2": $my-color-2,
 );
 
 // classes personalizadas
@@ -18,8 +18,8 @@ $navbar: $my-color-2;
 div.background-img {
   position: absolute;
   width: 100%;
-  height: auto;
-  background: url(../assets/background-img.jpg) no-repeat center center fixed;
+  height: 100vh;
+  background: url(../assets/background-img.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -moz-background-size: cover;
@@ -40,4 +40,8 @@ div.nav-theme {
 // Links of the Navbar
 div.nav-links-theme {
   width: 27em;
+}
+
+div.breakspace {
+  height: 6rem;
 }
