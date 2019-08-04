@@ -7023,13 +7023,12 @@ a.text-dark:hover, a.text-dark:focus {
 div.background-img {
   position: absolute;
   width: 100%;
-  height: 100vh;
-  background: url(../assets/background-img.png) no-repeat center center fixed;
+  height: 75rem;
+  background: url(../assets/background-img.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
-  background-color: #ffffff; }
+  background-size: cover; }
 
 div.cover-theme {
   height: 25%; }
@@ -7041,4 +7040,4 @@ div.nav-links-theme {
   width: 27em; }
 
 div.breakspace {
-  height: 6rem; }
+  padding-bottom: 4rem; }
