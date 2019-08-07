@@ -7043,9 +7043,8 @@ div.breakspace {
   padding-bottom: 4rem; }
 
 div.news-post {
-  height: 9rem;
+  min-height: 120px;
   width: 100%; }
 
 div.img-news {
-  max-width: 100%;
-  height: auto; }
+  min-width: 120px; }
