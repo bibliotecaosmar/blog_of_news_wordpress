@@ -7020,6 +7020,9 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+div.bg-theme {
+  background-color: #ffffff; }
+
 div.cover-theme, div.cover-theme-responsive {
   height: 20em;
   background-color: #421b84; }
@@ -7028,4 +7031,13 @@ div.cover-theme-responsive {
   height: 10px; }
 
 div.bg-navbar-theme {
-  background-color: #e7e7e7; }
+  background-color: #ffffff; }
+
+div.alignToLeft {
+  align-items: left; }
+
+div#novidades-theme {
+  background-color: #ffffff; }
+
+footer.footer-theme {
+  background-color: #272727; }
