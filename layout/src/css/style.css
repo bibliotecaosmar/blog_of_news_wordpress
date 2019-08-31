@@ -7023,21 +7023,29 @@ a.text-dark:hover, a.text-dark:focus {
 div.bg-theme {
   background-color: #ffffff; }
 
-div.cover-theme, div.cover-theme-responsive {
+div.cover-theme {
+  width: 100%;
   height: 20em;
-  background-color: #421b84; }
-
-div.cover-theme-responsive {
-  height: 10px; }
+  background-color: #54008e; }
 
 div.bg-navbar-theme {
   background-color: #ffffff; }
 
-div.alignToLeft {
-  align-items: left; }
+nav.navbar-theme {
+  width: 100%;
+  height: 20em;
+  color: #54008e; }
+
+div.bg-main-post {
+  background-color: #3c28b4; }
 
 div#novidades-theme {
   background-color: #ffffff; }
 
-footer.footer-theme {
+div.footer-theme {
+  width: 100%;
   background-color: #272727; }
+
+p.text-footer-theme {
+  text-align: center;
+  bottom: 0px; }

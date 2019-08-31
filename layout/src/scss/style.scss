@@ -3,23 +3,27 @@
 
 // Novas Cores
 $my-color-1: #e7e7e7;
-$my-color-2: #421b84;
+$my-color-2: #54008e;
 $my-color-3: #ffffff;
 $my-color-4: #272727;
+$my-color-5: #3c28b4;
 
 $theme-colors:(
   "my-color-1": $my-color-1,
   "my-color-2": $my-color-2,
   "my-color-3": $my-color-3,
   "my-color-4": $my-color-4,
+  "my-color-5": $my-color-5,
 );
 
 // Classes Personalizadas
 $bg-theme: $my-color-3;
 $bg-navbar-theme: $my-color-3;
+$text-navbar-theme: $my-color-2;
 $cover-theme: $my-color-2;
 $bg-novidades: $my-color-3;
 $footer: $my-color-4;
+$post-theme: $my-color-5;
 
 // Background
 div.bg-theme {
@@ -27,18 +31,10 @@ div.bg-theme {
 }
 
 // Capa
-%cover {
+div.cover-theme {
+  width: 100%;
   height: 20em;
   background-color: $cover-theme;
-}
-
-div.cover-theme {
-  @extend %cover;
-}
-
-div.cover-theme-responsive {
-  @extend %cover;
-  height: 10px;
 }
 
 // Navbar Atributos
@@ -46,8 +42,15 @@ div.bg-navbar-theme {
   background-color: $bg-navbar-theme;
 }
 
-div.alignToLeft {
-  align-items: left;
+nav.navbar-theme {
+  width: 100%;
+  height: 20em;
+  color: $text-navbar-theme;
+}
+
+// Main Posts
+div.bg-main-post {
+  background-color: $post-theme;
 }
 
 // Novidades Atributos
@@ -56,6 +59,12 @@ div#novidades-theme {
 }
 
 // Footer
-footer.footer-theme {
+div.footer-theme {
+  width: 100%;
   background-color: $footer;
+}
+
+p.text-footer-theme {
+  text-align: center;
+  bottom: 0px;
 }
