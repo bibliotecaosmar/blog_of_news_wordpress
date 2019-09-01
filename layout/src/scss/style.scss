@@ -7,6 +7,7 @@ $my-color-2: #54008e;
 $my-color-3: #ffffff;
 $my-color-4: #272727;
 $my-color-5: #3c28b4;
+$my-color-6: #e11aff;
 
 $theme-colors:(
   "my-color-1": $my-color-1,
@@ -14,16 +15,18 @@ $theme-colors:(
   "my-color-3": $my-color-3,
   "my-color-4": $my-color-4,
   "my-color-5": $my-color-5,
+  "my-color-6": $my-color-6
 );
 
 // Classes Personalizadas
 $bg-theme: $my-color-3;
+$cover-theme: $my-color-2;
+$bg-banner: $my-color-6;
 $bg-navbar-theme: $my-color-3;
 $text-navbar-theme: $my-color-2;
-$cover-theme: $my-color-2;
+$post-theme: $my-color-5;
 $bg-novidades: $my-color-3;
 $footer: $my-color-4;
-$post-theme: $my-color-5;
 
 // Background
 div.bg-theme {
@@ -35,6 +38,12 @@ div.cover-theme {
   width: 100%;
   height: 20em;
   background-color: $cover-theme;
+}
+
+// Banner
+div.banner {
+  height: 8rem;
+  background-color: $bg-banner;
 }
 
 // Navbar Atributos

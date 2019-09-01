@@ -7028,6 +7028,10 @@ div.cover-theme {
   height: 20em;
   background-color: #54008e; }
 
+div.banner {
+  height: 8rem;
+  background-color: #e11aff; }
+
 div.bg-navbar-theme {
   background-color: #ffffff; }
 
