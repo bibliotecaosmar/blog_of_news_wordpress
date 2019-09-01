@@ -7020,32 +7020,36 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-div.background-img {
-  position: absolute;
-  width: 100%;
-  height: 75rem;
-  background: url(../assets/background-img.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover; }
+div.bg-theme {
+  background-color: #ffffff; }
 
 div.cover-theme {
-  height: 25%; }
+  width: 100%;
+  height: 20em;
+  background-color: #54008e; }
 
-div.nav-theme {
-  background-color: #6633cc; }
+div.banner {
+  height: 8rem;
+  background-color: #e11aff; }
 
-div.nav-links-theme {
-  width: 27em; }
+div.bg-navbar-theme {
+  background-color: #ffffff; }
 
-div.breakspace {
-  padding-bottom: 4rem; }
+nav.navbar-theme {
+  width: 100%;
+  height: 20em;
+  color: #54008e; }
 
-div.news-post {
-  height: 9rem;
-  width: 100%; }
+div.bg-main-post {
+  background-color: #3c28b4; }
 
-div.img-news {
-  max-width: 100%;
-  height: auto; }
+div#novidades-theme {
+  background-color: #ffffff; }
+
+div.footer-theme {
+  width: 100%;
+  background-color: #272727; }
+
+p.text-footer-theme {
+  text-align: center;
+  bottom: 0px; }
