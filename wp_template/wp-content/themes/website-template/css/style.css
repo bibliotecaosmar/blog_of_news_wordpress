@@ -7035,6 +7035,9 @@ a.text-dark:hover, a.text-dark:focus {
 .bg-navbar {
   background-color: #ffffff; }
 
+.sidebar {
+  height: 4rem; }
+
 .bg-main-post {
   background-color: #3c28b4; }
 

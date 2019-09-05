@@ -15,3 +15,14 @@ require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 register_nav_menus( array(
     'principal' => __('Menu principal', 'wswp')
 ));
+
+// Sidebar
+register_sidebar(
+    array(
+        'name' => 'Barra lateral',
+        'id' => 'sidebar',
+        'before_widget' => '<div class="border border-primary">',
+        'after_widget' => '</div></div>',
+        'before_title' => '<h5 class="col mt-2 ml-2 sidebar">',
+        'after_title' => '</h5><div class="text-primary">',
+));

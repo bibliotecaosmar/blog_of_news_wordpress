@@ -3,130 +3,111 @@
 <!-- Destaques -->
 <div class="row pb-5 ml-5 mr-5">
 
-  <div class="col-md-6 mt-4">
+  <?php $query = new WP_Query( array( 'category_name' => 'destaques' ) ); ?>
 
-    <div class="card bg-main-post text-light post">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
+  <?php if($query->have_posts()) : while($query->have_posts()) : $query->the_post(); ?>
+
+    <div class="col-md mt-4">
+      <a href="<?php the_permalink(); ?> ">
+        <div class="card bg-main-post text-light post">
+          <img src="<?php the_thumbnail(); ?>">
+          <div class="card-body">
+            <h5 class="<?php the_title_attribute(); ?>">
+              <?php the_tittle(); ?>
+            </h5>
+            <p class="card-text">
+              <?php the_content(); ?>
+            </p>
+          </div>
+        </div>
+      </a>
     </div>
+    
+  <?php endwhile; ?>
+
+  <?php else : get_404_template(); endif; ?>
 
   </div>
-
-  <div class="col-md-6 mt-4">
-
-    <div class="card bg-main-post text-light post">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-
-    </div>
-
-  </div>
-
+ 
 </div>
 
 <div class="row ml-5 mb-5">
 
-  <div class="col-md-4 mt-4 mr-0 pr-0">
+  <?php 
+    $arg = array(
+      'post_type'       => 'post',
+      'posts_per_page'  => 3
+    ); 
 
-    <div class="card bg-main-post text-light" style="width: 14rem; height:10rem;">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-  
-  </div>
-  
-  <div class="col-md-4 mt-4 mr-0 pr-0">
+    $query = new WP_Query($args);
+  ?>
+
+  <?php if($query->have_posts()) : while($query->have_posts()) : $query->the_post(); ?>
     
-    <div class="card bg-main-post text-light" style="width: 14rem; height:10rem;">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
+    <div class="col-md mt-4 mr-0 pr-0">
+
+      <a href="<?php the_permalink();; ?>">
+        <img src="<?php the_thumbnail(); ?>">
+        <div class="card bg-main-post text-light" style="width: 14rem; height:10rem;">
+          <h5 class="<?php the_title_attribute(); ?>">
+            <?php the_tittle(); ?>
+          </h5>
+          <p class="card-text">
+            <?php the_content(); ?>
+          </p>
+        </div>
+      </a>
+    
     </div>
 
-  </div>
+  <?php endwhile; ?>
   
-  <div class="col-md-4 mt-4 mr-0 pr-0">
-
-    <div class="card bg-main-post text-light" style="width: 14rem; height:10rem;">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-
-  </div>
-
+  <?php else : get_404_template(); endif; ?>
+  
 </div>
 
 <!-- Novidades -->
-<div class="row">
+<?php $query = new WP_Query( array( 'category_name' => 'novidades' ) ); ?>
 
-  <div class="col-md-2" style="height: 4px;"></div>
+<?php if($query->have_posts()) : while($query->have_posts()) : $query->the_post(); ?>
 
-  <div class="col-md-8 mb-0 mt-0 pb-0 pt-0" style="height: 13rem;">
+  <div class="row">
 
-    <div id="novidades" class="card">
-      <div class="card-body">
+    <div class="col-md-2" style="height: 4px;"></div>
 
-        <div class="row ml-1 mr-1 mb-1 mt-1">
+    <div class="col-md-8 mb-0 mt-0 pb-0 pt-0" style="height: 13rem;">
 
-          <div class="col-3 bg-secondary"></div>
+      <div id="novidades" class="card">
+        <div class="card-body">
 
-          <div class="col-9">
+          <div class="row ml-1 mr-1 mb-1 mt-1">
 
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-1 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+            <div class="col-3 bg-secondary"></div>
 
-          </div>
+            <div class="col-9">
 
-        </div>
+              <h5 class="<?php the_title_attribute(); ?>">
+              <?php the_tittle(); ?>
+              </h5>
+              <p class="card-text">
+                <?php the_content(); ?>
+              </p>
 
-      </div>
-    </div>
-
-  </div>
-
-  <div class="col-md-2"></div>
-
-</div>
-
-<div class="row">
-
-  <div class="col-md-2"></div>
-
-  <div class="col-md-8 mb-0 mt-0 pb-0 pt-0" style="height: 13rem;">
-
-    <div id="novidades" class="card">
-      <div class="card-body">
-
-        <div class="row ml-1 mr-1 mb-1 mt-1">
-
-          <div class="col-3 bg-secondary"></div>
-
-          <div class="col-9">
-
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-1 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+            </div>
 
           </div>
 
         </div>
-
       </div>
+
     </div>
+
+    <div class="col-md-2"></div>
 
   </div>
 
-  <div class="col-md-2"></div>
-
-</div>
+<?php endwhile; ?>
+  
+<?php else : get_404_template(); endif; ?>
 
 <?php get_footer(); ?>
