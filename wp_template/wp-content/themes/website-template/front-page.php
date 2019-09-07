@@ -1,11 +1,17 @@
 <?php get_header(); ?>
-
 <!-- Destaques -->
 <div class="row pb-5 ml-5 mr-5">
 
-  <?php $query = new WP_Query( array( 'category_name' => 'destaques' ) ); ?>
+  <?php 
+  
+  $query = new WP_Query( array( 
+    'category_name'   => 'destaques',
+    'posts_per_page'  => 2
+  ) );
 
-  <?php if($query->have_posts()) : while($query->have_posts()) : $query->the_post(); ?>
+  if($query->have_posts()) : while($query->have_posts()) : $query->the_post(); 
+  
+  ?>
 
     <div class="col-md mt-4">
       <a href="<?php the_permalink(); ?> ">
@@ -33,16 +39,7 @@
 
 <div class="row ml-5 mb-5">
 
-  <?php 
-    $arg = array(
-      'post_type'       => 'post',
-      'posts_per_page'  => 3
-    ); 
-
-    $query = new WP_Query($args);
-  ?>
-
-  <?php if($query->have_posts()) : while($query->have_posts()) : $query->the_post(); ?>
+  <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
     
     <div class="col-md mt-4 mr-0 pr-0">
 
@@ -109,5 +106,4 @@
 <?php endwhile; ?>
   
 <?php else : get_404_template(); endif; ?>
-
 <?php get_footer(); ?>
