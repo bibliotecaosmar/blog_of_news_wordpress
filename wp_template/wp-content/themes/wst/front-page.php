@@ -6,7 +6,7 @@
   <?php
 
   $args = array(
-    'cat'   => 2,
+    'cat'   => 3,
     'posts_per_page'  => 2
   );
 
@@ -43,7 +43,6 @@
   <?php 
   
   $args = array(
-    'cat'   => 3,
     'posts_per_page'  => 3
   );
 
@@ -78,7 +77,7 @@
 <?php
 
 $args = array(
-  'cat'   => 1,
+  'cat'   => 4,
   'posts_per_page'  => 3
 );
 

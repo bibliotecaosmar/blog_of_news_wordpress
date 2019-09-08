@@ -1,7 +1,5 @@
-<?php /* Template name: Novidades */ ?>
+<?php /* Template name: Notícias */ ?>
 <?php get_header(); ?>
-
-<!-- Banner -->
 
 <!-- Novidades -->
 <div class="row">
@@ -9,9 +7,11 @@
   <?php 
   
   $args = array(
-    'cat'             => 2,
-    'posts_per_page'  => 6
-  ); 
+    'cat'             => 5,
+    'posts_per_page'  => 4
+  );
+
+  $query = new WP_Query($args);
 
   if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
   
@@ -38,4 +38,4 @@
   
 </div>
 
-<?php get_foooter(); ?>
+<?php get_footer(); ?>
