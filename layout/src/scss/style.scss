@@ -63,6 +63,7 @@ $footer: $my-color-4;
 // Principais Posts
 .bg-main-post {
   background-color: $post;
+  opacity: 0.6;
 }
 
 .post {
@@ -70,6 +71,10 @@ $footer: $my-color-4;
   height: 20rem;
   max-width: 24rem;
   background-size:cover;
+}
+
+.opacity {
+  opacity: 0.6;
 }
 
 // Novidades Atributos
