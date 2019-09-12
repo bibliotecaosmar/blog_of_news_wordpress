@@ -29,9 +29,7 @@
   
             <div class="row ml-1 mr-1 mb-1 mt-1">
     
-              <div class="col-3 bg-secondary ">
-                <?php the_post_thumbnail('post-thumbnail', array('class' => 'img-fluid')) ?>
-              </div>
+              <div class="col-3 bg-secondary p-0" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');"></div>
   
               <div class="col-9">
   

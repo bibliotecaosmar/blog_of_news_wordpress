@@ -44,6 +44,8 @@ register_sidebar(
  */
 // Definir as miniaturas dos posts
 add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 1280, 1280, true );
+
 
 add_filter( 'excerpt_length', function( $length ) {
     return 20;

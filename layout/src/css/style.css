@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -7020,6 +7021,36 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+/**
+*******************
+* Imagens         *
+*******************
+*/
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto; }
+
+.img-cover {
+  background-size: cover; }
+
+/**
+***************
+* Botões      *
+***************
+*/
+.button-default {
+  width: 90%;
+  min-width: 120px; }
+
+/**
+*******************
+* Elements        *
+*******************
+*/
 .bg {
   background-color: #ffffff; }
 
@@ -7032,18 +7063,35 @@ a.text-dark:hover, a.text-dark:focus {
   height: 8rem;
   background-color: #e11aff; }
 
+#novidades {
+  background-color: #ffffff; }
+
+/**
+*********************
+* Navbar            *
+*********************
+*/
 .bg-navbar {
   background-color: #ffffff; }
 
 .text-navbar {
   color: #54008e; }
 
+/**
+*******************
+* Sidebar         *
+*******************
+*/
 .sidebar {
   height: 4rem; }
 
+/**
+***************
+* Posts       *
+***************
+*/
 .bg-main-post {
-  background-color: #3c28b4;
-  opacity: 0.6; }
+  background-color: #3c28b4; }
 
 .post {
   width: 90%;
@@ -7051,16 +7099,11 @@ a.text-dark:hover, a.text-dark:focus {
   max-width: 24rem;
   background-size: cover; }
 
-.opacity {
-  opacity: 0.6; }
-
-#novidades {
-  background-color: #ffffff; }
-
-.button-default {
-  width: 90%;
-  min-width: 120px; }
-
+/**
+********************
+* Footer           *
+********************
+*/
 .footer {
   width: 100%;
   background-color: #272727; }

@@ -1,13 +1,5 @@
 <?php get_header(); ?>
 
-<style>
-  <?php if(the_post_thumbnail_url()) : ?>
-    a.post-img {
-      background-image: url('<?php the_post_thumbnail(); ?>');
-    }
-  <?php endif; ?>
-</style>
-
 <!-- Destaques -->
 <div class="row pb-5 ml-5 mr-5">
 
@@ -27,8 +19,8 @@
 
     <div class="col-md mt-4">
       <a href="<?php the_permalink(); ?>" class="post-img" alt="">
-        <div class="card bg-main-post text-light post opacity">
-          <div class="card-body">
+        <div class="card bg-main-post text-light post">
+           <div class="card-body" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');">
             <h5 class="<?php the_title_attribute(); ?>">
               <?php the_title(); ?>
             </h5>
@@ -66,7 +58,7 @@
     <div class="col-md mt-4 mr-0 pr-0">
 
       <a href="<?php the_permalink(); ?>">
-        <div class="card bg-main-post text-light opacity" style="width: 14rem; height:10rem;">
+        <div class="card bg-main-post text-light" style="width: 14rem; height:10rem;">
           <h5 class="<?php the_title_attribute(); ?>">
             <?php the_title(); ?>
           </h5>
@@ -110,9 +102,7 @@ if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
 
           <div class="row ml-1 mr-1 mb-1 mt-1">
 
-            <div class="col-3 bg-secondary ">
-              <?php the_post_thumbnail('post-thumbnail', array('class' => 'img-fluid')) ?>
-            </div>
+            <div class="col-3 bg-secondary" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');"></div>
 
             <div class="col-9">
 
