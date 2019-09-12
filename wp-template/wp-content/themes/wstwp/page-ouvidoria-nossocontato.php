@@ -6,6 +6,9 @@
 
   <?php get_sidebar(); ?>
 
+  <div class="col-md-8 ml-3 mb-5">
+  </div>
+
 </div>
 
 <?php get_footer(); ?>

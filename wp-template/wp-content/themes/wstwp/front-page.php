@@ -36,6 +36,8 @@
 
   <?php else : get_404_template(); endif; ?>
 
+  <?php wp_reset_query(); ?>
+
 </div>
  
 <!-- Main Posts -->
@@ -74,6 +76,8 @@
 
   <?php else : get_404_template(); endif; ?>
   
+  <?php wp_reset_query(); ?>
+
 </div>
 
 <!-- Novidades -->
@@ -99,24 +103,26 @@ if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
 
       <div id="novidades" class="card">
         <div class="card-body">
+          <a href="<?php the_permalink(); ?>">
+          
+            <div class="row ml-1 mr-1 mb-1 mt-1">
 
-          <div class="row ml-1 mr-1 mb-1 mt-1">
+              <div class="col-3 bg-secondary" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');"></div>
 
-            <div class="col-3 bg-secondary" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');"></div>
+              <div class="col-9">
 
-            <div class="col-9">
+                <h5 class="<?php the_title_attribute(); ?>">
+                  <?php the_title(); ?>
+                </h5>
+                <p class="card-text">
+                  <?php the_excerpt(); ?>
+                </p>
 
-              <h5 class="<?php the_title_attribute(); ?>">
-                <?php the_title(); ?>
-              </h5>
-              <p class="card-text">
-                <?php the_excerpt(); ?>
-              </p>
+              </div>
 
             </div>
 
-          </div>
-
+          </a>
         </div>
       </div>
 
@@ -129,5 +135,7 @@ if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
 <?php endwhile; ?>
   
 <?php else : get_404_template(); endif; ?>
+
+<?php wp_reset_query(); ?>
 
 <?php get_footer(); ?>

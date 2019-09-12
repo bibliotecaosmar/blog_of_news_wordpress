@@ -26,24 +26,26 @@
   
         <div id="novidades" class="card">
           <div class="card-body">
-  
-            <div class="row ml-1 mr-1 mb-1 mt-1">
-    
-              <div class="col-3 bg-secondary p-0" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');"></div>
-  
-              <div class="col-9">
-  
-                <h5 class="<?php the_title_attribute(); ?>">
-                  <?php the_title(); ?>
-                </h5>
-                <p class="card-text">
-                  <?php the_excerpt(); ?>
-                </p>
-  
+            <a href="<?php the_permalink(); ?>">
+            
+              <div class="row ml-1 mr-1 mb-1 mt-1">
+                
+                <div class="col-3 bg-secondary p-0" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');"></div>
+
+                <div class="col-9">
+
+                  <h5 class="<?php the_title_attribute(); ?>">
+                    <?php the_title(); ?>
+                  </h5>
+                  <p class="card-text">
+                    <?php the_excerpt(); ?>
+                  </p>
+
+                </div>
+
               </div>
-  
-            </div>
-  
+            
+            </a>
           </div>
         </div>
   
@@ -57,6 +59,17 @@
     
   <?php else : get_404_template(); endif; ?>
   
+  <div class="blog-pagination mb-5">
+    <?php 
+    
+    next_posts_link( 'Mais antigos', $the_query->max_num_pages );
+    previous_posts_link( 'Mais novos' ); 
+    
+    ?>
+  </div>
+
+  <?php wp_reset_postdata(); ?>
+
 </div>
   
 <?php get_footer(); ?>
