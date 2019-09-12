@@ -1,36 +1,36 @@
-<?php /* Template name: Ouvidoria */ ?>
+<?php /* Template name: Ouvidoria Trabalhe Conosco*/ ?>
 <?php get_header(); ?>
 
 <!-- Sidebar e Formulário de Feedback -->
 <div class="row mt-5 mr-5 mb-3">
 
-  <?php get_sidebar(); ?>
+  <div class="col-md-4 m-1 mb-5">
+    
+    <?php get_sidebar(); ?>
+  
+  </div>
 
-  <!-- Form -->
   <div class="col-md-8 ml-3 mb-5">
+        
+    <div class="border border-primary" style="height: 45rem;">
+    
+      <div class="row">
 
-    <div class="border border-primary mt-3" style="height: 45rem; min-width: 400px;">
-
-      <div class="row ml-1 mt-4">
-
-        <div class="col">
-
-          <form>
-            <h3>Formulário: </h3>
-            <div class="row">
-              <div class="col">
-                <input type="text" style="width: 90%; height: 15rem; min-width: 120px;"><br>
-                <button class="btn btn-primary button-default" type="submit">Enviar</button>
-              </div>
-            </div>
-          </form>
-
+        <div class="col ml-4 mr-4 mt-3">
+          
+          <h3>
+            <?php the_title(); ?>
+          </h3>
+          <p>
+            <?php the_content(); ?>
+          </p>
+        
         </div>
 
       </div>
-
+    
     </div>
-
+  
   </div>
 
 </div>
