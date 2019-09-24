@@ -1,4 +1,4 @@
-#Wordpress Blog Template
+# Wordpress Blog Template
 
 Template for use in blogs and forum with updates on some subject.
 
