@@ -24,4 +24,4 @@ Description: Blog with 3~4 pages to educational purposes
 
 5. Ouvidoria - Trabalhe conosco
 
-![](/prototypes/"Ouvidoria - Trabalhe conosco".jpg)
+![](/prototypes/Ouvidoria_-_Trabalhe_conosco.jpg)
