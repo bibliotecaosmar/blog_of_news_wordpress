@@ -7,16 +7,21 @@ Description: Blog with 3~4 pages to educational purposes
 # Prototypes #
 
 1. Início
- ![](/prototypes/Início.jpg)
+
+![](/prototypes/Início.jpg)
 
 2. Notícia
- ![](/prototypes/Notícias.jpg)
+
+![](/prototypes/Notícias.jpg)
 
 3. Ouvidoria - Envie para nós
- ![](/prototypes/Ouvidoria - Envie para nós.jpg)
+
+![](/prototypes/"Ouvidoria - Envie para nós".jpg)
 
 4. Ouvidoria - Nosso contato
- ![](/prototypes/Ouvidoria - Nosso contato.jpg)
+
+![](/prototypes/"Ouvidoria - Nosso contato".jpg)
 
 5. Ouvidoria - Trabalhe conosco
- ![](/prototypes/Ouvidoria - Trabalhe conosco.jpg)
+
+![](/prototypes/"Ouvidoria - Trabalhe conosco".jpg)
