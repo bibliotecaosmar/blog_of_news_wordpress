@@ -1,4 +1,4 @@
-# Wordpress Blog Template #
+# Wordpress Blog of News Template #
 
 Template for use in blogs and forum with updates on some subject.
 
